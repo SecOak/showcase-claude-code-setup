@@ -1,0 +1,57 @@
+{
+  "env": {
+    "MCP_TIMEOUT": "60000",
+    "GUARD_HARD_BLOCK": "1"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -S -E C:/Dev/claude-hooks/guard-destructive-azure-sql.py",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python -S -E C:/Dev/claude-hooks/context-reminders.py",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -S -E C:/Dev/claude-hooks/context-reminders.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "python -S -E C:/Dev/claude-hooks/statusline.py"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "microsoft-docs@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
+  "theme": "dark"
+}

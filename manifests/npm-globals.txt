@@ -1,0 +1,7 @@
+# One npm package per line. Restore-ClaudeSeat.ps1 installs any that are missing.
+# Sync-ClaudeSeat.ps1 regenerates this file from "npm ls -g" on your own computer.
+pyright                        # Python language server (pyright-lsp plugin)
+typescript                     # TypeScript compiler
+typescript-language-server     # TypeScript language server (typescript-lsp plugin)
+# gitnexus                     # optional: code knowledge graph server (see docs/OPTIONAL-SERVERS.md)
+# @tobilu/qmd                  # optional: local markdown search server (see docs/OPTIONAL-SERVERS.md)

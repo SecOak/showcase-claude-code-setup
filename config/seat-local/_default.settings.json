@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(py *)",
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(uv *)",
+      "Bash(uvx *)",
+      "Bash(pytest *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(node *)",
+      "PowerShell(*)",
+      "Read(//c/dev/**)",
+      "Edit(//c/dev/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)",
+      "Bash(sudo rm *)",
+      "Bash(format *)",
+      "Bash(mkfs *)",
+      "Bash(dd *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "PowerShell(curl *)",
+      "PowerShell(wget *)",
+      "PowerShell(format *)",
+      "PowerShell(mkfs *)",
+      "PowerShell(dd *)",
+      "PowerShell(Format-Volume *)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  }
+}

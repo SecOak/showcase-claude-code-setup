@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "plugins": {
+    "superpowers@claude-plugins-official": [],
+    "skill-creator@claude-plugins-official": [],
+    "frontend-design@claude-plugins-official": [],
+    "security-guidance@claude-plugins-official": [],
+    "microsoft-docs@claude-plugins-official": [],
+    "typescript-lsp@claude-plugins-official": [],
+    "pyright-lsp@claude-plugins-official": []
+  }
+}

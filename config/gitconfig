@@ -1,0 +1,12 @@
+# Starter ~/.gitconfig. Restore-ClaudeSeat.ps1 copies it only when you have none yet.
+# Add your own identity afterwards with:
+#   git config --global user.name  "<YOUR_NAME>"
+#   git config --global user.email "<YOUR_GITHUB_NOREPLY_EMAIL>"
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = true
+[pull]
+	rebase = false
+[fetch]
+	prune = true

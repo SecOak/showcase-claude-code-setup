@@ -1,0 +1,14 @@
+{
+  "gitnexus": {
+    "type": "stdio",
+    "command": "C:/Dev/claude-hooks/gitnexus-mcp.cmd",
+    "args": [],
+    "env": {}
+  },
+  "qmd": {
+    "type": "stdio",
+    "command": "C:/Dev/claude-hooks/qmd-mcp.cmd",
+    "args": [],
+    "env": {}
+  }
+}

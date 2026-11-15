@@ -1,0 +1,35 @@
+# Secrets and real environment values. Never commit these.
+*.env
+.env.*
+secrets/
+credentials*.json
+.credentials.json
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Backups that Restore-ClaudeSeat.ps1 leaves next to replaced files
+*.pre-restore-*
+
+# Runtime data produced by tools (never source)
+logs/
+*.log
+*.sqlite
+*.sqlite-*
+
+# Memory: Sync-ClaudeSeat.ps1 copies your Claude Code memory into memory\ so it
+# goes along with your PRIVATE copy. If your copy is ever public, uncomment the next line.
+# memory/
+
+# Editor, operating system and language leftovers
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.gitnexus/

@@ -1,0 +1,11 @@
+# One winget package id per line. Restore-ClaudeSeat.ps1 installs any that are missing.
+# Hand-maintained; Sync-ClaudeSeat.ps1 does not regenerate this file.
+Anthropic.ClaudeCode        # Claude Code
+Git.Git                     # git
+GitHub.cli                  # GitHub command-line tool (gh)
+OpenJS.NodeJS.LTS           # node and npm (qmd, gitnexus, language servers)
+Python.Python.3.12          # python
+astral-sh.uv                # uv
+Microsoft.PowerShell        # PowerShell 7
+Gitleaks.Gitleaks           # secret scanner used by the pre-commit hook
+# Microsoft.DotNet.SDK.8    # optional: only if you write C# (the csharp language server plugin needs it)
